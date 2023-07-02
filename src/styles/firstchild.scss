@@ -1,0 +1,46 @@
+.phone{
+    width: 100%;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.8rem;
+    >div{
+        width: 80%;
+        // margin: auto;
+        display: flex;
+        flex-direction: column;
+        // gap:.7rem;
+        >label{
+            text-transform: capitalize;
+            color: rgb(100,116,139);
+            font-size: 1.1rem;
+            font-weight: 400;
+        }
+        >input{
+            padding: .8rem ;
+            border-radius: 5px;
+            outline: none;
+            border: 2px solid rgb(237,237,237);
+            &:focus{
+                border-color: #0076B4;
+            }
+        }
+        .phoneInput{
+            // padding: .6rem;
+            border: 2px solid rgb(237,237,237);
+            border-radius: 5px;
+            padding: .8rem;
+            width: 100%;
+            
+            >input{
+                border: none;
+                width: 100%;
+                &:focus{
+                    border: none;
+                    outline: none;
+                }
+            }
+        }
+    }
+}

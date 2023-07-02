@@ -1,0 +1,38 @@
+#loginPage{
+    height: 100%;
+    width: 100%;
+    // background-color: pink;
+    >form{
+        width: 100%;
+        height: 55%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap:1.2rem;
+        align-items: center;
+        >div{
+            width: 75%;
+            // margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            // align-items: center;
+            // >label{
+
+
+            // }
+            >input{
+                width: 100%;
+                margin: auto;
+                padding: .9rem;
+                border: 2px solid rgb(237,237,237);
+                border-radius: 5px;
+                &:focus{
+                    outline: none;
+                    border:2px solid #0076B4 ;
+                }
+            }
+        }
+    }
+    
+}

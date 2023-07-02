@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,900;1,500;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+     
+}
+@import "static";
+
+@import "header";
+@import "home";
+@import "component1";
+@import "component";
+@import "firstchild";
+@import "secondchild";
+
+
+
+@import "mediaQuery";

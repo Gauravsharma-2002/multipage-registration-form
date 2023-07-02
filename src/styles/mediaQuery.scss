@@ -1,0 +1,63 @@
+@media screen and (max-width: 1045px) {
+  .homePage {
+    .final {
+      display: flex;
+      flex-direction: column;
+
+      > div {
+        &:first-of-type {
+          height: 15%;
+
+          > img {
+            &:first-of-type{
+                height: 3rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+           &:last-of-type{
+            display: none;
+           }
+          }
+        }
+        &:nth-child(2) {
+          height: 85%;
+          // background-color: pink;
+        }
+      }
+    }
+  }
+
+  .centralDiv {
+    padding: 1.2rem 0;
+  }
+
+  .phone {
+    align-items: center;
+  }
+
+  .password {
+    height: 65%;
+
+    > div {
+      > label {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  nav {
+    > div {
+      display: none;
+    }
+    > a {
+      display: block;
+    }
+  }
+}
+
+@media screen and (max-width:420px) {
+  
+}

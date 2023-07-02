@@ -1,0 +1,113 @@
+.dropdown {
+    position: relative;
+    padding: .9rem;
+    height: 25%;
+  
+    > label {
+      font-size: medium;
+      // position: absolute;
+      align-self: flex-start;
+      top: 0;
+      // transform: translate(-120%,300%);
+    }
+    > select {
+      width: 100%;
+      padding: 1.2rem;
+      border: 1px solid rgb(237, 237, 237);
+      outline: none;
+      border-radius: 6px;
+      &:focus {
+        border: 2px solid rgb(120, 120, 249);
+      }
+      > option {
+        background-color: #fff;
+        color: #333;
+  
+        &:focus {
+          background-color: none;
+        }
+      }
+    }
+  }
+// *{
+//     border: 1px solid red;
+// }
+  .interiordiv{
+      width: 100%;
+      min-height: 25%;
+      // padding: .1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      .buttonGrp{
+          width: 95%;
+          margin: auto;
+          display: flex;
+          flex-direction: column;
+          gap: .6rem;
+          >button{
+              cursor: pointer;
+              
+            //   width: 100%;
+              // margin: auto;
+  
+              padding: .6rem;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 1rem;
+              border:none;
+              background-color: white;
+              box-shadow: .5px .5px 1px 1px rgb(0,0,0,0.5);
+              font-size: .9rem;
+              border-radius: 5px;
+  
+             
+              &:last-of-type{
+                  box-shadow: none    ;
+                  background-color: #0076B4;
+                  color:white;
+                  font-size: .9rem;
+                  box-shadow:.5px .5px 1px 1px rgb(0,118,180 ,.6) ;
+              }
+  
+  
+          }
+  
+      }
+      .lastlink{
+          // background-color: #0076B4;
+          width: 95%;
+          margin: auto;
+          padding:  .4rem;
+          >p{
+              font-size: .7rem;
+              >span{
+                  margin-left: .2rem;
+                  font-size: 1rem;
+                  color: #0076B4;
+                  cursor: pointer;
+              }
+          }
+      }
+      
+  
+  
+  }
+  .centralDiv{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    padding: .9rem 0;
+    gap: .6rem;
+ 
+    align-items: center;
+    >div{
+        display: inline-block;
+        width: 80%;
+        height: 3px;
+        background-color: $color2_2;
+    }
+  }
+  
