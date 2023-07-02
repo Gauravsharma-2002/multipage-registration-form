@@ -1,7 +1,21 @@
 import React, { useState } from "react";
 
 const Secondchild = ({ formData, setFormData }) => {
-  const [submit, setsubmit] = useState(true);
+  // const [submit, setsubmit] = useState(true);
+  // const submitStatus=()=>{
+  //   if(formData.spassword===""||formData.cpassword==="")setsubmit(true)
+  //   else setsubmit(false);
+  //   console.log("check")
+
+  //   if(formData.spassword!==formData.cpassword)setsubmit(true) 
+  //   else setsubmit(false);
+  // }
+  
+  const alertabove=()=>{
+    if(formData.spassword!==formData.cpassword)
+    alert("mismatch in password")
+  }
+
   return (
     <div className="password">
       <div>
@@ -10,16 +24,12 @@ const Secondchild = ({ formData, setFormData }) => {
         <input
           type="password"
           onChange={(e) => {
-            const lidvalue = e.target.value;
+            const svalue = e.target.value;
             // console.log(lidvalue);
-            setFormData({ ...formData, spassword: lidvalue });
-            if (
-              formData.spassword === "" ||
-              formData.spassword !== formData.cpassword
-            )
-              setsubmit(true);
-            else setsubmit(false);
+            setFormData({ ...formData, spassword: svalue });
+            // submitStatus();
           }}
+
           value={formData.spassword}
         />
       </div>
@@ -30,19 +40,14 @@ const Secondchild = ({ formData, setFormData }) => {
           type="password"
           required
           onChange={(e) => {
-            const pnoValue = e.target.value;
-            setFormData({ ...formData, cpassword: pnoValue });
-            if (
-              formData.cpassword === "" ||
-              formData.cpassword !== formData.spassword
-            )
-              setsubmit(true);
-            else setsubmit(false);
+            const cValue = e.target.value;
+            setFormData({ ...formData, cpassword: cValue });
+            // submitStatus();
           }}
           value={formData.cpassword}
         />
       </div>
-      <button disabled={submit}>Submit</button>
+      <button onClick={alertabove}>Submit</button>
     </div>
   );
 };
